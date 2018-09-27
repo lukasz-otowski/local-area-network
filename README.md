@@ -1,6 +1,6 @@
-#local-area-network#
+#local-area-network
 
-####Cheatsheet for quick repetiton of information####
+####Cheatsheet for quick repetiton of information
 
 Site build on bootstrap 4.1.3
 
