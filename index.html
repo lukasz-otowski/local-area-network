@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container">
+        <header class="">
+            <h1 class="row justify-content-center h1">LOCAL-AREA-NETWORK</h1>
+            <h3 class="row justify-content-center h3">cheatsheet</h3>
+            <p class="row justify-content-center">Based on Polish standard</p>
+        </header>
+    </div>
+
+    <main role="main">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col card bg-primary p-4 border border-dark">
+                    <h2 class="card-header h2">TWISTED PAIR:</h2>
+                    <h3 class="card-title h3">UTP (Unshielded Twisted Pair) - used in most types of network</h3>
+                    <h3 class="card-title h3">STP (Shielded Twisted Pair) – with shield protect against interference</h3>
+                
+                    <ul class="list-group">
+                        <li class="list-group-item text-dark">
+                            <h3 class="h3">Building infrastructure:</h3>
+                        </li>
+                        <li class="list-group-item text-dark">Category 3 – networks up to 10 Mb/s</li>
+                        <li class="list-group-item text-dark">Category 5 – networks up to 100 Mb/s</li>
+                        <li class="list-group-item text-dark">Category 5e – networks up to 1 Gb/s</li>
+                        <li class="list-group-item text-dark">Category 6 – networks up to 10 Gb/s</li>
+                        <li class="list-group-item text-dark">Category 7 – networks above 1 Gb/s</li>
+                    </ul>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col router card bg-primary border border-dark">
+					<div class="card-body">
+						<h2 class="card-header h2">ROUTER</h2>
+						<P class="card-text card-body bg-light text-dark">Router is one of main devices in network architecture. It can transfer internet packages between local computer and global internet. </P>
+					</div>
+				</div>
+			</div>
+            
+            
+            <div class="row">
+                <div class="col card bg-primary p-4 border border-dark">
+                    <ul class="list-group">
+                        <li class="list-group-item text-dark">ISO / OSI</li>
+                        <li class="list-group-item text-dark">Application layer</li>
+                        <li class="list-group-item text-dark">Presentation layer</li>
+                        <li class="list-group-item text-dark">Session layer</li>
+                        <li class="list-group-item text-dark">Transport layer</li>
+                        <li class="list-group-item text-dark">Network layer</li>
+                        <li class="list-group-item text-dark">Data link layer</li>
+                        <li class="list-group-item text-dark">Physical layer</li>
+                    </ul>
+                </div>
+                
+                <div class="col card bg-primary p-4 border border-dark">
+                    <ul class="list-group">
+                        <li class="list-group-item text-dark">TCP/IP</li>
+                        <li class="list-group-item text-dark">Application</li>
+                        <li class="list-group-item text-dark">Transport layer</li>
+                        <li class="list-group-item text-dark">Internet layer</li>
+                        <li class="list-group-item text-dark">Network accsess layer</li>
+                    </ul>
+                </div>
+            </div>
+            
+			<div class="row card bg-primary p-4 border border-dark">
+				<h2 class="h2">TWISTED PAIR CABLE</h2>
+				<figure class="figure text-center">
+					<img class="figure-img img-fluid" src="rj45.jpg" alt="twisted pair cable">
+					<figcaption class="figure-caption text-light">colors for two types of twisted pair cable</figcaption>
+				</figure>
+			</div>
+			
+			<div class="row card bg-primary p-4 border border-dark">
+				<h2 class="row h2">NETWORK TYPES</h2>
+				<div class="row">
+				<div class="col">
+					<ul class="list-group">
+						<li class="list-group-item text-dark">WAN - Wide Area Network</li>
+						<li class="list-group-item text-dark">MAN - Metropolitan Area Network</li>
+						<li class="list-group-item text-dark">LAN - Local Area Network</li>
+						<li class="list-group-item text-dark">SAN - Storage Area Network</li>
+					</ul>
+				</div>
+				<div class="col"></div>
+				</div>
+			</div>
+			
+			<!--??????????????????????????????? -->
+				<!-- List group --
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<!-- Tab panes --
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">aaa</div>
+  <div class="tab-pane" id="profile" role="tabpanel">bbb</div>
+  <div class="tab-pane" id="messages" role="tabpanel">eee</div>
+  <div class="tab-pane" id="settings" role="tabpanel">www</div>
+</div>
+			<!--??????????????????????????????? -->
+			
+        </div>
+    </main>
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./script/script.js"></script>
+</body>
+
+</html>
