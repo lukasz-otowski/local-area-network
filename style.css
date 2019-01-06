@@ -7,3 +7,9 @@
 .tcp-layers .list-group-item:nth-child(5) {
     flex-grow: 4;
 }
+.section-header {
+    text-transform: uppercase;
+}
+.topology .figure-caption {
+    font-size: 25px;
+}
