@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Network</title>
-<!--LOCAL   LINK-->
+    <!--LOCAL   LINK-->
     <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
-<!--ONLINE   LINK-->
+    <!--ONLINE   LINK-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-dark text-light">
 
-<!--HEADER-NAVBAR START-->
+    <!--HEADER-NAVBAR START-->
     <div class="container-fluid row p-0 m-0 header-navbar">
         <header class="col-4">
             <h1 class="row justify-content-center h1">NETWORK</h1>
@@ -33,13 +33,13 @@
             </ul>
         </nav>
     </div>
-<!--HEADER-NAVBAR END-->
-    
-<!--MAIN CONTENT START-->
+    <!--HEADER-NAVBAR END-->
+
+    <!--MAIN CONTENT START-->
     <main role="main">
         <div class="container">
-            
-<!--STRUCTURE START-->
+
+            <!--STRUCTURE START-->
             <section class="row card bg-primary p-4 border border-dark topology" id="structure">
                 <div class="row">
                     <header class="section-header">
@@ -96,88 +96,99 @@
                     <div class="col"></div>
                 </div>
             </div>
-<!--STRUCTURE END-->
+            <!--STRUCTURE END-->
 
-<!--DEVICES START-->
-            <div class="row" id="devices">
-                <div class="col card bg-primary p-4 border border-dark">
-                    <h2 class="card-header h2">TWISTED PAIR:</h2>
-                    <h3 class="card-title h3">UTP (Unshielded Twisted Pair) - used in most types of network</h3>
-                    <h3 class="card-title h3">STP (Shielded Twisted Pair) – with shield protect against interference</h3>
+            <!--DEVICES START-->
+            <section class="row card bg-primary p-4 border border-dark topology" id="devices">
+                <div class="row">
+                    <header class="section-header">
+                        <h2 class="h2">Network Devices</h2>
+                    </header>
+                </div>
+                <section class="row col-12 bg-primary">
+                   <header class="col-12 text-center">
+                       <h3>Wiring</h3>
+                   </header>
+                    <dl class="col-6 row">
+                        <dt class="col-3">TWISTED PAIR</dt>
+                        <dd class="col-9">Most used cable type in network transmission. Made from four inner cable pair.</dd>
+                        <dt class="col-3">U/UTP</dt>
+                        <dd class="col-9">Unshielded twisted pair, most used type.</dd>
+                        <dt class="col-3">SF/UTP</dt>
+                        <dd class="col-9"> Shielded twisted pair, with shield protect against interference.</dd>
+                    </dl>
+                    <div class="col-6 bg-primary">
+                        <figure class="figure text-center">
+                            <img class="figure-img img-fluid" src="./rj45.JPG" alt="twisted pair cable">
+                            <figcaption class="figure-caption text-light text-left h5">Twisted pair colors order</figcaption>
+                        </figure>
+                    </div>
 
-                    <ul class="list-group">
+                    <ul class="col-12 list-group text-dark">
                         <li class="list-group-item text-dark">
                             <h3 class="h3">Building infrastructure:</h3>
                         </li>
-                        <li class="list-group-item text-dark">Category 3 – networks up to 10 Mb/s</li>
-                        <li class="list-group-item text-dark">Category 5 – networks up to 100 Mb/s</li>
-                        <li class="list-group-item text-dark">Category 5e – networks up to 1 Gb/s</li>
-                        <li class="list-group-item text-dark">Category 6 – networks up to 10 Gb/s</li>
-                        <li class="list-group-item text-dark">Category 7 – networks above 1 Gb/s</li>
+                        <li class="list-group-item">Category 3 – networks up to 10 Mb/s</li>
+                        <li class="list-group-item">Category 5 – networks up to 100 Mb/s</li>
+                        <li class="list-group-item">Category 5e – networks up to 1 Gb/s</li>
+                        <li class="list-group-item">Category 6 – networks up to 10 Gb/s</li>
+                        <li class="list-group-item ">Category 7 – networks above 1 Gb/s</li>
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col router card bg-primary border border-dark">
-                    <div class="card-body">
-                        <h2 class="card-header h2">ROUTER</h2>
-                        <p class="card-text card-body bg-light text-dark">Router is one of main devices in network architecture. It can transfer internet packages between local computer and global internet. </p>
-                        <p class="card-text card-body bg-light text-dark">To practice router manage you can visit <a href="http://ui.linksys.com/">http://ui.linksys.com/</a></p>
+                </section>
+                <div class="row">
+                    <div class="col router bg-primary">
+                        <div class="card-body">
+                            <h2 class="card-header h2">ROUTER</h2>
+                            <p class="card-text card-body bg-light text-dark">Router is one of main devices in network architecture. It can transfer internet packages between local computer and global internet. </p>
+                            <p class="card-text card-body bg-light text-dark">To practice router manage you can visit <a href="http://ui.linksys.com/">http://ui.linksys.com/</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="row">
-                <div class="col card bg-primary p-4 border border-dark">
-                    <ul class="list-group">
-                        <li class="list-group-item text-dark">ISO / OSI</li>
-                        <li class="list-group-item text-dark">Application layer</li>
-                        <li class="list-group-item text-dark">Presentation layer</li>
-                        <li class="list-group-item text-dark">Session layer</li>
-                        <li class="list-group-item text-dark">Transport layer</li>
-                        <li class="list-group-item text-dark">Network layer</li>
-                        <li class="list-group-item text-dark">Data link layer</li>
-                        <li class="list-group-item text-dark">Physical layer</li>
-                    </ul>
-                </div>
-
-                <div class="col card bg-primary p-4 border border-dark">
-                    <ul class="list-group tcp-layers">
-                        <li class="list-group-item text-dark">TCP/IP</li>
-                        <li class="list-group-item text-dark">Application</li>
-                        <li class="list-group-item text-dark">Transport layer</li>
-                        <li class="list-group-item text-dark">Internet layer</li>
-                        <li class="list-group-item text-dark">Network accsess layer</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- <section>
                 <div class="row">
-                    <header>
-                        <h2>Internet protocols</h2>
-                    </header>
+                    <div class="col bg-primary p-4">
+                        <ul class="list-group">
+                            <li class="list-group-item text-dark">ISO / OSI</li>
+                            <li class="list-group-item text-dark">Application layer</li>
+                            <li class="list-group-item text-dark">Presentation layer</li>
+                            <li class="list-group-item text-dark">Session layer</li>
+                            <li class="list-group-item text-dark">Transport layer</li>
+                            <li class="list-group-item text-dark">Network layer</li>
+                            <li class="list-group-item text-dark">Data link layer</li>
+                            <li class="list-group-item text-dark">Physical layer</li>
+                        </ul>
+                    </div>
+
+                    <div class="col bg-primary p-4">
+                        <ul class="list-group tcp-layers">
+                            <li class="list-group-item text-dark">TCP/IP</li>
+                            <li class="list-group-item text-dark">Application</li>
+                            <li class="list-group-item text-dark">Transport layer</li>
+                            <li class="list-group-item text-dark">Internet layer</li>
+                            <li class="list-group-item text-dark">Network accsess layer</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="row">
-                    <article>
-                        <h3>TCP/IP</h3>
-                        <p>Transmission Control Protocol / Internet Protocol</p>
-                    </article>
-                <div>
-            </section> -->
 
-            <div class="row card bg-primary p-4 border border-dark">
-                <h2 class="h2">TWISTED PAIR CABLE</h2>
-                <figure class="figure text-center">
-                    <img class="figure-img img-fluid" src="./rj45.JPG" alt="twisted pair cable">
-                    <figcaption class="figure-caption text-light">colors for two types of twisted pair cable</figcaption>
-                </figure>
-            </div>
+                <!-- <section>
+                    <div class="row">
+                        <header>
+                            <h2>Internet protocols</h2>
+                        </header>
+                    </div>
+                    <div class="row">
+                        <article>
+                            <h3>TCP/IP</h3>
+                            <p>Transmission Control Protocol / Internet Protocol</p>
+                        </article>
+                    <div>
+                                </section> -->
 
+            </section>
+            <!--DEVICES END-->
 
-<!--PROTOCOLS START-->
-            <div class="row card bg-primary p-4 border border-dark" id="protocols">
+            <!--PROTOCOLS START-->
+            <div class="row card bg-primary p-4" id="protocols">
                 <h2 class="h2">Protocols</h2>
                 <div class="row">
                     <section class="dl-horizontal col-6">
@@ -206,7 +217,8 @@
                     </section>
                 </div>
             </div>
-
+            <!--PROTOCOLS END-->
+            
             <!--??????????????????????????????? -->
             <!-- List group --
 <div class="list-group" id="myList" role="tablist">
@@ -227,7 +239,7 @@
 
         </div>
     </main>
-<!--MAIN CONTENT END-->
+    <!--MAIN CONTENT END-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./script/script.js"></script>
