@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Network</title>
 <!--LOCAL   LINK-->
-<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+    <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
 <!--ONLINE   LINK-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,18 +13,93 @@
 
 <body class="bg-dark text-light">
 
-    <div class="container">
-        <header class="">
-            <h1 class="row justify-content-center h1">LOCAL-AREA-NETWORK</h1>
-            <h3 class="row justify-content-center h3">cheatsheet</h3>
+<!--HEADER-NAVBAR START-->
+    <div class="container-fluid row p-0 m-0 header-navbar">
+        <header class="col-4">
+            <h1 class="row justify-content-center h1">NETWORK</h1>
             <p class="row justify-content-center">Based on Polish standard</p>
         </header>
+        <nav class="col-8">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#structure">Structure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#devices">Devices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#protocols">Protocols</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
+<!--HEADER-NAVBAR END-->
+    
+<!--MAIN CONTENT START-->
     <main role="main">
         <div class="container">
+            
+<!--STRUCTURE START-->
+            <section class="row card bg-primary p-4 border border-dark topology" id="structure">
+                <div class="row">
+                    <header class="section-header">
+                        <h2 class="h2">Network Structure</h2>
+                    </header>
+                </div>
+                <h3 class="subheader text-center">Topology</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <figure class="figure text-center">
+                            <figcaption class="figure-caption text-light">Bus topology</figcaption>
+                            <img class="figure-img img-fluid img-topology" src="./assets/img/bus.jpg" alt="twisted pair cable">
+                        </figure>
+                    </div>
+                    <div class="col-4 img-topology">
+                        <figure class="figure text-center">
+                            <figcaption class="figure-caption text-light">Ring topology</figcaption>
+                            <img class="figure-img img-fluid img-topology" src="./assets/img/ring.jpg" alt="twisted pair cable">
+                        </figure>
+                    </div>
+                    <div class="col-4 img-topology">
+                        <figure class="figure text-center">
+                            <figcaption class="figure-caption text-light">Star topology</figcaption>
+                            <img class="figure-img img-fluid img-topology" src="./assets/img/star.jpg" alt="twisted pair cable">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-2 img-topology">
+                        <figure class="figure text-center">
+                            <figcaption class="figure-caption text-light">Tree topology</figcaption>
+                            <img class="figure-img img-fluid img-topology" src="./assets/img/tree.jpg" alt="twisted pair cable">
+                        </figure>
+                    </div>
+                    <div class="col-4 img-topology">
+                        <figure class="figure text-center">
+                            <figcaption class="figure-caption text-light">Mesh topology</figcaption>
+                            <img class="figure-img img-fluid img-topology" src="./assets/img/mesh.jpg" alt="twisted pair cable">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <div class="row card bg-primary p-4 border border-dark">
+                <h2 class="row h2">NETWORK TYPES</h2>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item text-dark">WAN - Wide Area Network</li>
+                            <li class="list-group-item text-dark">MAN - Metropolitan Area Network</li>
+                            <li class="list-group-item text-dark">LAN - Local Area Network</li>
+                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>
+                        </ul>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+<!--STRUCTURE END-->
 
-            <div class="row">
+<!--DEVICES START-->
+            <div class="row" id="devices">
                 <div class="col card bg-primary p-4 border border-dark">
                     <h2 class="card-header h2">TWISTED PAIR:</h2>
                     <h3 class="card-title h3">UTP (Unshielded Twisted Pair) - used in most types of network</h3>
@@ -92,48 +167,6 @@
                 <div>
             </section> -->
 
-            <section class="row card bg-primary p-4 border border-dark topology">
-                <div class="row">
-                    <header class="section-header">
-                        <h2 class="h2">Network Topology</h2>
-                    </header>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Bus topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/bus.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Ring topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/ring.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Star topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/star.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 offset-2 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Tree topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/tree.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Mesh topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/mesh.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                </div>
-            </section>
-
             <div class="row card bg-primary p-4 border border-dark">
                 <h2 class="h2">TWISTED PAIR CABLE</h2>
                 <figure class="figure text-center">
@@ -142,22 +175,9 @@
                 </figure>
             </div>
 
-            <div class="row card bg-primary p-4 border border-dark">
-                <h2 class="row h2">NETWORK TYPES</h2>
-                <div class="row">
-                    <div class="col">
-                        <ul class="list-group">
-                            <li class="list-group-item text-dark">WAN - Wide Area Network</li>
-                            <li class="list-group-item text-dark">MAN - Metropolitan Area Network</li>
-                            <li class="list-group-item text-dark">LAN - Local Area Network</li>
-                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>
-                        </ul>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
 
-            <div class="row card bg-primary p-4 border border-dark">
+<!--PROTOCOLS START-->
+            <div class="row card bg-primary p-4 border border-dark" id="protocols">
                 <h2 class="h2">Protocols</h2>
                 <div class="row">
                     <section class="dl-horizontal col-6">
@@ -171,7 +191,7 @@
                             <li class="list-group-item text-dark">WiFi</li>
                             <li class="list-group-item text-dark">FDDI</li>
                             <li class="list-group-item text-dark">ATM LANE</li>
-                        </ul class="list-group">
+                        </ul>
                     </section>
                     <section class="dl-horizontal col-6">
                         <header>
@@ -182,7 +202,7 @@
                             <li class="list-group-item text-dark">Frame Relay</li>
                             <li class="list-group-item text-dark">ISDN</li>
                             <li class="list-group-item text-dark">DSL</li>
-                        </ul class="list-group">
+                        </ul>
                     </section>
                 </div>
             </div>
@@ -207,6 +227,7 @@
 
         </div>
     </main>
+<!--MAIN CONTENT END-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./script/script.js"></script>
