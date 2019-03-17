@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Network</title>
     <!--LOCAL   LINK-->
-<!--        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+    <!--        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <!--ONLINE   LINK-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -91,7 +91,7 @@
                             <li class="list-group-item text-dark">RAN - Radio Access Network</li>
                             <li class="list-group-item text-dark">MAN - Metropolitan Area Network</li>
                             <li class="list-group-item text-dark">CAN - Campus Area Network</li>
-<!--                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>-->
+                            <!--                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>-->
                         </ul>
                     </div>
                     <div class="col-6">
@@ -100,28 +100,64 @@
                             <li class="list-group-item text-dark">PAN - Personal Area Network</li>
                             <li class="list-group-item text-dark">BAN - Body Area Network</li>
                             <li class="list-group-item text-dark">Nanonetwork</li>
-<!--                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>-->
+                            <!--                            <li class="list-group-item text-dark">SAN - Storage Area Network</li>-->
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row card bg-primary p-4 border border-dark">
+                <h2>Network addresses</h2>
+                <ul class="list-group col-6">
+                    <li class="list-group-item text-dark">    1.0.0.0 - 127.255.255.255 - A class</li>
+                    <li class="list-group-item text-dark">128.0.0.0 - 191.255.255.255 - B class</li>
+                    <li class="list-group-item text-dark">192.0.0.0 - 223.255.255.255 - C class</li>
+                    <li class="list-group-item text-dark">224.0.0.0 - 239.255.255.255 - D class</li>
+                    <li class="list-group-item text-dark">240.0.0.0 - 255.255.255.255 - E class</li>
+                    <li class="list-group-item text-dark">127.0.0.1 - localhost</li>
+                    <li class="list-group-item text-dark">255.255.255.255 - Broadcast address</li>
+                </ul>
+            </div>
+            <div class="row card bg-primary p-4 border border-dark">
                 <h2 class="row h2">LAN network technologies</h2>
-                    <div class="row">
-                        <h3 class="h3">Ethernet</h3>
-                    </div>
-                    <div class="row">
-                        <h3 class="h3">Fast-Ethernet</h3>
-                    </div>
-                    <div class="row">
-                        <h3 class="h3">Giga-Ethernet</h3>
-                    </div>
-                    <div class="row">
-                        <h3 class="h3">Virtual LAN</h3>
-                    </div>
+                <div class="row">
+                    <h3 class="h3">Ethernet</h3>
+                </div>
+                <div class="row">
+                    <h3 class="h3">Fast-Ethernet</h3>
+                </div>
+                <div class="row">
+                    <h3 class="h3">Giga-Ethernet</h3>
+                </div>
+                <div class="row">
+                    <h3 class="h3">Virtual LAN</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-primary p-4">
+                    <ul class="list-group">
+                        <li class="list-group-item text-dark">ISO / OSI</li>
+                        <li class="list-group-item text-dark">Application layer</li>
+                        <li class="list-group-item text-dark">Presentation layer</li>
+                        <li class="list-group-item text-dark">Session layer</li>
+                        <li class="list-group-item text-dark">Transport layer</li>
+                        <li class="list-group-item text-dark">Network layer</li>
+                        <li class="list-group-item text-dark">Data link layer</li>
+                        <li class="list-group-item text-dark">Physical layer</li>
+                    </ul>
+                </div>
+
+                <div class="col bg-primary p-4">
+                    <ul class="list-group tcp-layers">
+                        <li class="list-group-item text-dark">TCP/IP</li>
+                        <li class="list-group-item text-dark">Application</li>
+                        <li class="list-group-item text-dark">Transport layer</li>
+                        <li class="list-group-item text-dark">Internet layer</li>
+                        <li class="list-group-item text-dark">Network accsess layer</li>
+                    </ul>
+                </div>
             </div>
             <!--STRUCTURE END-->
-            
+
             <!--DEVICES START-->
             <section class="row card bg-primary p-4 border border-dark topology" id="devices">
                 <div class="row">
@@ -130,9 +166,9 @@
                     </header>
                 </div>
                 <section class="row col-12 bg-primary">
-                   <header class="col-12 text-center">
-                       <h3>Wiring</h3>
-                   </header>
+                    <header class="col-12 text-center">
+                        <h3>Wiring</h3>
+                    </header>
                     <dl class="col-6 row">
                         <dt class="col-3">TWISTED PAIR</dt>
                         <dd class="col-9">Most used cable type in network transmission. Made from four inner cable pair.</dd>
@@ -166,31 +202,6 @@
                             <p class="card-text card-body bg-light text-dark">Router is one of main devices in network architecture. It can transfer internet packages between local computer and global internet. </p>
                             <p class="card-text card-body bg-light text-dark">To practice router manage you can visit <a href="http://ui.linksys.com/">http://ui.linksys.com/</a></p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col bg-primary p-4">
-                        <ul class="list-group">
-                            <li class="list-group-item text-dark">ISO / OSI</li>
-                            <li class="list-group-item text-dark">Application layer</li>
-                            <li class="list-group-item text-dark">Presentation layer</li>
-                            <li class="list-group-item text-dark">Session layer</li>
-                            <li class="list-group-item text-dark">Transport layer</li>
-                            <li class="list-group-item text-dark">Network layer</li>
-                            <li class="list-group-item text-dark">Data link layer</li>
-                            <li class="list-group-item text-dark">Physical layer</li>
-                        </ul>
-                    </div>
-
-                    <div class="col bg-primary p-4">
-                        <ul class="list-group tcp-layers">
-                            <li class="list-group-item text-dark">TCP/IP</li>
-                            <li class="list-group-item text-dark">Application</li>
-                            <li class="list-group-item text-dark">Transport layer</li>
-                            <li class="list-group-item text-dark">Internet layer</li>
-                            <li class="list-group-item text-dark">Network accsess layer</li>
-                        </ul>
                     </div>
                 </div>
 
@@ -242,7 +253,7 @@
                 </div>
             </div>
             <!--PROTOCOLS END-->
-            
+
             <!--??????????????????????????????? -->
             <!-- List group --
 <div class="list-group" id="myList" role="tablist">
