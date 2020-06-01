@@ -1,35 +1,27 @@
-.header-navbar {
-    background-color: #028;
-}
-
-.tcp-layers {
-    flex-grow: 1;
-}
-
-.tcp-layers .list-group-item:nth-child(2) {
-    flex-grow: 8;
-}
-
-.tcp-layers .list-group-item:nth-child(5) {
-    flex-grow: 4;
-}
-
-.section-header {
-    text-transform: uppercase;
-    text-align: center;
-    border-bottom: 2px solid #028;
-    border-top: 2px solid #028;
+.gallery {
     width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-rows: 300px;
 }
 
-.topology .figure-caption {
-    font-size: 25px;
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.h2 {
-    font-size: 25px;
+.gallery img {
+    max-width: 300px;
+    max-height:100%;
 }
 
-.h3 {
-    font-size: 15px;
+.section_topology {
+    color: #00a;
 }
+
+.section_topology img {
+}
+

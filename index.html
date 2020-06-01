@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Network</title>
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -13,7 +14,6 @@
     <div class="container-fluid row p-0 m-0 header-navbar">
         <header class="col-4">
             <h1 class="row justify-content-center h1">NETWORK</h1>
-            <p class="row justify-content-center">Based on Polish standard</p>
         </header>
         <nav class="col-8">
             <ul class="nav">
@@ -42,41 +42,33 @@
                         <h2 class="h2">Network Structure</h2>
                     </header>
                 </div>
-                <h3 class="subheader text-center">Topology</h3>
-                <div class="row">
-                    <div class="col-4">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Bus topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/bus.jpg" alt="twisted pair cable">
+                <section class="section_topology">
+                    <header>
+                        <h3 class="subheader text-center">Topology</h3>
+                    </header>
+                    <div class="gallery">
+                        <figure>
+                            <figcaption>Bus topology</figcaption>
+                            <img src="./assets/img/bus.jpg" alt="twisted pair cable">
+                        </figure>
+                        <figure>
+                            <figcaption>Ring topology</figcaption>
+                            <img src="./assets/img/ring.jpg" alt="twisted pair cable">
+                        </figure>
+                        <figure>
+                            <figcaption>Star topology</figcaption>
+                            <img src="./assets/img/star.jpg" alt="twisted pair cable">
+                        </figure>
+                        <figure>
+                            <figcaption>Tree topology</figcaption>
+                            <img src="./assets/img/tree.jpg" alt="twisted pair cable">
+                        </figure>
+                        <figure>
+                            <figcaption >Mesh topology</figcaption>
+                            <img src="./assets/img/mesh.jpg" alt="twisted pair cable">
                         </figure>
                     </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Ring topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/ring.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Star topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/star.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 offset-2 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Tree topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/tree.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                    <div class="col-4 img-topology">
-                        <figure class="figure text-center">
-                            <figcaption class="figure-caption text-light">Mesh topology</figcaption>
-                            <img class="figure-img img-fluid img-topology" src="./assets/img/mesh.jpg" alt="twisted pair cable">
-                        </figure>
-                    </div>
-                </div>
+                </section>
             </section>
             <div class="row card bg-primary p-4 border border-dark">
                 <h2 class="row h2">NETWORK TYPES</h2>
@@ -104,7 +96,7 @@
             <div class="row card bg-primary p-4 border border-dark">
                 <h2>Network addresses</h2>
                 <ul class="list-group col-6">
-                    <li class="list-group-item text-dark">    1.0.0.0 - 127.255.255.255 - A class</li>
+                    <li class="list-group-item text-dark"> 1.0.0.0 - 127.255.255.255 - A class</li>
                     <li class="list-group-item text-dark">128.0.0.0 - 191.255.255.255 - B class</li>
                     <li class="list-group-item text-dark">192.0.0.0 - 223.255.255.255 - C class</li>
                     <li class="list-group-item text-dark">224.0.0.0 - 239.255.255.255 - D class</li>
